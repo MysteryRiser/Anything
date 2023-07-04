@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Let's Get Started</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap" rel="stylesheet">
+    <style>
+        *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        ffont-family: 'Manrope', sans-serif;
+        }
+        .Background
+        {
+            background: linear-gradient(45deg, #1f253e, #313a61);
+            width:100%;
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        
+        .container {
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        
+        .Doc {
+            position: absolute;
+            top: 0;
+            
+            margin: 10px;
+            }
+            
+            .svgimg{
+                position: absolute;
+                top: 0;
+                z-index:-1;
+            }
+            
+        h1, p {
+            background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+        
+        .StartBTN
+        {
+            color:black;
+            background-color:white;
+            border:none;
+            border-radius:25px;
+            margin:20px;
+            
+        }
+        button {
+            font-size:70px;
+            box-shadow: 0px 5px 15px #ffffff;
+            cursor: pointer;
+            transition-duration:1s;
+            
+        }
+        
+        button:hover {
+            box-shadow: 0 0px 16px 0 #ffffff,0 0px 50px 0 #ffffff;
+            }
+            
+        #animation {
+            margin:auto;
+            background: linear-gradient(0deg, #ff7e15, #15cbff);
+            
+            
+            
+            width:0px;
+            height:0px;
+            border-radius:15px;
+            transition-duration:1s;
+            display:flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items:center;
+            box-shadow: 0px 0px 10px #1c4c53;
+            position: absolute;
+            top: 50%;
+            bottom: 50%;
+            }
+            
+        #link{
+            
+            
+                color: white;
+                text-decoration: none;
+                
+                padding:0px;
+                border-radius:25px;
+                text-align: centre;
+                
+                font-size:0px;
+                cursor: pointer;
+                transition-duration:1.3s;
+            }
+        #link:hover {
+            box-shadow: 0 0px 16px 0 #ffffff,0 0px 50px 0 #ff892b;
+            }
+            
+        #link2{
+            
+            
+                color: white;
+                text-decoration: none;
+                
+                padding:0px;
+                border-radius:25px;
+                text-align: centre;
+                
+                font-size:0px;
+                cursor: pointer;
+                transition-duration:1.3s;
+            }
+        #link2:hover {
+            box-shadow: 0 0px 16px 0 #ffffff,0 0px 50px 0 #8515ff;
+            }
+            
+        #link3{
+                color: white;
+                text-decoration: none;
+                
+                padding:0px;
+                border-radius:25px;
+                text-align: centre;
+                
+                font-size:0px;
+                cursor: pointer;
+                transition-duration:1.3s;
+            }
+        #link3:hover {
+            box-shadow: 0 0px 16px 0 #80eaff,0 0px 20px 0 #000c7b;
+            }
+            
+            #link4{
+                color: white;
+                text-decoration: none;
+                
+                padding:0px;
+                border-radius:25px;
+                text-align: centre;
+                
+                font-size:0px;
+                cursor: pointer;
+                transition-duration:1.3s;
+            }
+        #link4:hover {
+            box-shadow: 0 0px 16px 0 #80eaff,0 0px 20px 0 #000c7b;
+            }
+            
+            
+    </style>
+</head>
+<body class="Background">
+    <div class="Doc">
+    <h1>Welcome!</h1>
+    
+    <br>
+    <p>This is a website where you will find three main things <b>Calculator, Game, Weather App</b> and <b>Analogue Clock.</b></p>
+    <br>
+    <p>Click on the <b><span style="background: #ffffff3b; border-radius: 5px; padding: 2px;">Let's Start</span></b> button below and see what happens.</p>
+    </div>
+    
+    
+<div class="container">
+            <div id="animation">
+            <a href="MyCalculator.html" id="link" class="link">Calculator</a>
+            <br>
+            <a href="SnakeGame.html" id="link2" class="link">Play Game</a>
+            <br>
+            <a href="WeatherApp.html" id="link3" class="link">Check Weather</a>
+            <br>
+            <a href="AnalogClock.html" id="link4" class="link">Analogue Clock</a>
+            </div>
+        
+<button id="StartBTN" class="StartBTN" onclick="animation()">Let's Start</button>
+        
+</div>
+    
+    <script>
+       
+            
+            function animation () {
+                const Adiv = document.getElementById("animation");
+                const link= document.getElementById("link");
+                const link2= document.getElementById("link2");
+                const link3= document.getElementById("link3");
+                const link4= document.getElementById("link4");
+                const button= document.getElementById("StartBTN");
+            
+      Adiv.style.width = "350px"; 
+      Adiv.style.height = "500px";
+      Adiv.style.background="linear-gradient(0deg, #ba55ff, #fffc40)";
+      
+      link.style.fontSize= "40px";
+      link.style.padding= "20px";
+      link.style.background= "linear-gradient(0deg, #8515ff, #ff9d00)";
+      
+      link2.style.fontSize= "40px";
+      link2.style.padding= "20px";
+      link2.style.background= "linear-gradient(0deg, #000c7b, #8515ff)";
+      
+      link3.style.fontSize= "40px";
+      link3.style.padding= "20px";
+      link3.style.background= "linear-gradient(0deg, #000000, #000c7b)";
+      
+      link4.style.fontSize= "40px";
+      link4.style.padding= "20px";
+      link4.style.background= "linear-gradient(0deg, #8098ff, #ff80dd)";
+      
+    }
+    </script>
+</body>
+</html>
